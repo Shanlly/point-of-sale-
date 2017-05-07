@@ -117,7 +117,7 @@
 		}
  		var quantityBefore = inventory[0].quantity;
 		console.log(markItemSold(inventory[0])===29);
-		console.log(quantityBefore -1 === inventory[0];)
+		console.log(quantityBefore -1 === inventory[0]);
 
 
 
@@ -135,7 +135,7 @@
 		function checkOutCustomer(customerObj) {
 			 var subtotal = getSubTotalForCustomer(customerObj);
 			totalMoneyMade += subtotal;
-			markItemSold(customerObj);
+			markItemSold(item);
 			
 			emptyCart(customerObj);
 			//todo: take in a customer object, compute the total
