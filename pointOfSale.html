@@ -135,7 +135,9 @@
 		function checkOutCustomer(customerObj) {
 			 var subtotal = getSubTotalForCustomer(customerObj);
 			totalMoneyMade += subtotal;
-			markItemSold(item);
+			for(var items in customerObj){
+				markItemSold(customerObj[items]);
+			}
 			
 			emptyCart(customerObj);
 			//todo: take in a customer object, compute the total
